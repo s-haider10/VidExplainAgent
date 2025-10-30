@@ -1,0 +1,7 @@
+Matrix-matrix multiplication is visually shown as a composition of two successive transformations on a 3D grid (00:03:29).
+
+Here's how it's depicted:
+1.  Two 3x3 matrices are presented side-by-side, labeled 'First transformation' (the right matrix) and 'Second transformation' (the left matrix).
+2.  A 3D grid first undergoes the transformation encoded by the 'First transformation' matrix.
+3.  Immediately following this, the already transformed 3D grid then undergoes a second transformation, which is encoded by the 'Second transformation' matrix.
+4.  The final deformed grid represents the result of applying both transformations in sequence, illustrating how matrix multiplication combines these transformations into one (00:03:29, 00:04:04).

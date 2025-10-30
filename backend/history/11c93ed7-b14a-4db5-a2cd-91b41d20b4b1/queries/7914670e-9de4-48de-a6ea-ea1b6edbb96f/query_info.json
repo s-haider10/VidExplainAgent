@@ -1,0 +1,57 @@
+{
+  "query": "How is matrix-matrix multiplication shown visually",
+  "timestamp": null,
+  "processed_query_text": "How is matrix-matrix multiplication shown visually",
+  "retrieved_context": [
+    {
+      "event_index": 13,
+      "video_url": "https://youtu.be/rHLEWRxRGiM?si=w2IGJoNb1as3cYzE",
+      "timestamp_start_str": "00:03:28",
+      "timestamp_end_str": "00:03:48",
+      "raw_transcript": "Multiplying two matrices is also similar. Whenever you see two 3x3 matrices getting multiplied together, you should imagine first applying the transformation encoded by the right one, then applying the transformation encoded by the left one.",
+      "job_id": "11c93ed7-b14a-4db5-a2cd-91b41d20b4b1",
+      "key_concepts": "Matrix-matrix multiplication,Composition of transformations,Order of operations,Sequential application",
+      "raw_visuals": "Two 3x3 matrices are shown: a magenta matrix `[[0,-2,2],[5,1,5],[1,4,-1]]` labeled 'Second transformation' and a multicolored matrix `[[0,1,2],[3,4,5],[6,7,8]]` labeled 'First transformation'. The 3D grid animation from earlier (a rotation around the Y-axis, then another transformation) plays, visually representing the sequential application of the transformations encoded by the two matrices."
+    },
+    {
+      "video_url": "https://youtu.be/rHLEWRxRGiM?si=w2IGJoNb1as3cYzE",
+      "timestamp_start_str": "00:03:16",
+      "event_index": 12,
+      "raw_transcript": "So to see where your vector lands, you multiply those coordinates by the corresponding columns of the matrix and then you add together the three results.",
+      "timestamp_end_str": "00:03:28",
+      "raw_visuals": "The 3x3 matrix `[[0,1,2],[3,4,5],[6,7,8]]` is shown with an input vector `[[x],[y],[z]]`. The process of matrix-vector multiplication is animated: x scales the first column, y scales the second, and z scales the third. These scaled column vectors are then added together to form the 'Output vector'.",
+      "job_id": "11c93ed7-b14a-4db5-a2cd-91b41d20b4b1",
+      "key_concepts": "Matrix-vector multiplication,Column vectors,Linear combination,Output vector"
+    },
+    {
+      "event_index": 15,
+      "key_concepts": "Numerical matrix multiplication,Conceptual understanding,Self-assessment",
+      "video_url": "https://youtu.be/rHLEWRxRGiM?si=w2IGJoNb1as3cYzE",
+      "timestamp_start_str": "00:04:04",
+      "raw_visuals": "The two 3x3 matrices from earlier (magenta and multicolored) are shown again. The speaker challenges the viewer to think about the numerical calculation in the context of the geometric transformations.",
+      "raw_transcript": "Performing this matrix multiplication numerically is, once again, pretty similar to the two-dimensional case. In fact, a good way to test your understanding of the last video would be to try to reason through what specifically this matrix multiplication should look like, thinking closely about how it relates to the idea of applying two successive transformations in space.",
+      "job_id": "11c93ed7-b14a-4db5-a2cd-91b41d20b4b1",
+      "timestamp_end_str": "00:04:32"
+    },
+    {
+      "timestamp_end_str": "00:03:16",
+      "video_url": "https://youtu.be/rHLEWRxRGiM?si=w2IGJoNb1as3cYzE",
+      "raw_visuals": "A generic 3x3 matrix `[[0,1,2],[3,4,5],[6,7,8]]` is labeled 'Transformation'. An input vector `[[x],[y],[z]]` is labeled 'Input vector'. A visualization shows an input vector (purple arrow) being constructed from scaled versions of the original basis vectors (red, green, light blue). Then, the transformation is applied to the basis vectors, and the *scaled* transformed basis vectors are shown adding together to form the transformed output vector (white arrow), demonstrating linearity.",
+      "job_id": "11c93ed7-b14a-4db5-a2cd-91b41d20b4b1",
+      "raw_transcript": "To see where a vector with coordinates XYZ lands, the reasoning is almost identical to what it was for two dimensions. Each of those coordinates can be thought of as instructions for how to scale each basis vector, so that they add together to get your vector. And the important part, just like the 2D case, is that this scaling and adding process works both before and after the transformation.",
+      "key_concepts": "Matrix-vector multiplication,Linear combination,Basis vectors,Vector scaling,Vector addition,Linearity",
+      "event_index": 11,
+      "timestamp_start_str": "00:02:50"
+    },
+    {
+      "timestamp_start_str": "00:03:48",
+      "key_concepts": "Applications of linear algebra,Computer graphics,Robotics,Composition of rotations,Complexity reduction",
+      "raw_transcript": "It turns out that 3D matrix multiplication is actually pretty important for fields like computer graphics and robotics, since things like rotations in three dimensions can be pretty hard to describe, but they're easier to wrap your mind around if you can break them down as the composition of separate, easier to think about, rotations.",
+      "timestamp_end_str": "00:04:04",
+      "video_url": "https://youtu.be/rHLEWRxRGiM?si=w2IGJoNb1as3cYzE",
+      "event_index": 14,
+      "job_id": "11c93ed7-b14a-4db5-a2cd-91b41d20b4b1",
+      "raw_visuals": "Text labels 'Computer graphics' and 'Robotics' appear. The 3D grid animation showing successive transformations is replayed, reinforcing the idea of composing rotations, as relevant to these practical fields."
+    }
+  ]
+}

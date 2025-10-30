@@ -1,0 +1,5 @@
+The video visualizes vector addition in two main ways:
+
+1.  **In 2D (00:00:19):** An input vector (e.g., `[[-1], [2]]`) is shown as the sum of its scaled basis vectors. The red x-basis vector (i-hat) is scaled by -1, and the green y-basis vector (j-hat) is scaled by 2. These two scaled vectors are then animated head-to-tail to show their sum, which forms a yellow resultant vector.
+
+2.  **In 3D (00:02:50):** A pink input vector `[[x], [y], [z]]` is visualized as the sum of its scaled basis vectors. The i-hat, j-hat, and k-hat vectors (represented by yellow axes) are individually scaled by x, y, and z respectively. These three scaled vectors are then graphically added together (likely head-to-tail, though not explicitly stated for all three simultaneously) to form the final pink input vector. The same process is then shown after a transformation, where the transformed basis vectors are scaled by x, y, and z, and then added to form the transformed pink vector.

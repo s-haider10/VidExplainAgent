@@ -1,0 +1,9 @@
+Based on the video context:
+
+A vector is a representation of a point in space, with its "tip at that point" and its tail typically originating from the origin (00:01:13).
+
+Vectors are described by coordinates, such as X Y Z for three dimensions (00:02:49), or the components `[-1, 2]` shown for a two-dimensional vector (00:00:19). These coordinates act as "instructions for how to scale each basis vector so that they add together to get your vector" (00:02:49). For example, a 3D vector `v` is shown as `xî + yĵ + zk`, formed by summing scaled standard basis vectors (00:02:49).
+
+The video introduces "standard basis vectors" which are unit vectors in specific directions: i-hat for the X direction, j-hat for the Y direction, and k-hat for the Z direction (00:01:28).
+
+Vectors can be "input vectors" that move or transform into "output vectors" (00:01:13).

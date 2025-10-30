@@ -1,0 +1,109 @@
+```json
+[
+  {
+    "timestamp_start_str": "00:00:00",
+    "timestamp_end_str": "00:00:03",
+    "transcript_snippet": "",
+    "visual_description": "The video starts with a black screen. A thin, light blue oval appears in the center, rotating slowly. It then transforms into the 3Blue1Brown logo: a torus (donut shape) with one segment colored brown and the rest light blue, subtly animated with a fractal-like texture. The name '3Blue1Brown' appears below in white text.",
+    "key_concepts": ["Intro Animation", "Channel Logo"]
+  },
+  {
+    "timestamp_start_str": "00:00:03",
+    "timestamp_end_str": "00:00:13",
+    "transcript_snippet": "Lisa: Well, where's my dad? Frink: Well, it should be obvious to even the most dimwitted individual who holds an advanced degree in hyperbolic topology that Homer Simpson has stumbled into...(dramatic pause)...the third dimension.",
+    "visual_description": "The 3Blue1Brown logo remains on the black screen. Text appears on the left, displaying a quote from The Simpsons. 'Lisa: Well, where's my dad?' is in yellow. 'Frink: Well, it should be obvious to even the most dimwitted individual who holds an advanced degree in hyperbolic topology that Homer Simpson has stumbled into...(dramatic pause)...the third dimension.' is in white, with 'the third dimension' highlighted in light blue.",
+    "key_concepts": ["The Simpsons Quote", "Third Dimension"]
+  },
+  {
+    "timestamp_start_str": "00:00:13",
+    "timestamp_end_str": "00:00:19",
+    "transcript_snippet": "Hey folks, I've got a relatively quick video for you today, just sort of a footnote between chapters.",
+    "visual_description": "The background is black. Three small blue 'pi' characters (representing students) are on the left, looking up. A larger brown 'pi' character (representing the teacher) is on the right, facing them. A speech bubble above the brown 'pi' says 'Quick footnote here...'.",
+    "key_concepts": ["Video Introduction", "Footnote"]
+  },
+  {
+    "timestamp_start_str": "00:00:19",
+    "timestamp_end_str": "00:00:34",
+    "transcript_snippet": "In the last two videos, I talked about linear transformations and matrices, but I only showed the specific case of transformations that take two-dimensional vectors to other two-dimensional vectors. In general, throughout this series, we'll work mainly in two dimensions, mostly because it's easier to actually see on the screen and wrap your mind around.",
+    "visual_description": "A 2D coordinate system with a grid is shown. The axes are white, and the grid lines are light blue. A red arrow (representing the x-basis vector i-hat) points right, and a green arrow (representing the y-basis vector j-hat) points up. A matrix `[[3, 1], [1, 2]]` is displayed in the top-left. An input vector `[[-1], [2]]` is also shown. The vectors are animated as they are scaled by -1 and 2 respectively, showing their sum as a yellow vector, and then the transformed vector appears. The grid lines shear and stretch, demonstrating a linear transformation. This sequence repeats with the grid starting from a rectangular shape, then deforming, and finally returning to rectangular.",
+    "key_concepts": ["2D Linear Transformation", "Matrix Multiplication", "Basis Vectors", "Input/Output Vectors"]
+  },
+  {
+    "timestamp_start_str": "00:00:34",
+    "timestamp_end_str": "00:00:43",
+    "transcript_snippet": "But more importantly than that, once you get all the core ideas in two dimensions, they carry over pretty seamlessly to higher dimensions. \"Composition\" of a rotation and a shear",
+    "visual_description": "The 2D grid animation continues. The red and green basis vectors are shown, and the grid undergoes various transformations like rotation and shear. The text '\"Composition\" of a rotation and a shear' appears briefly at the top of the screen, then disappears.",
+    "key_concepts": ["Higher Dimensions", "Composition of Transformations"]
+  },
+  {
+    "timestamp_start_str": "00:00:43",
+    "timestamp_end_str": "00:00:52",
+    "transcript_snippet": "Nevertheless, it's good to peak our heads outside of flatland now and then to, you know, see what it means to apply these ideas in more than just those two dimensions.",
+    "visual_description": "The three small 'pi' characters and the large brown 'pi' character return on a black background. The speech bubble now says 'Peak outside flatland'. One of the small 'pi' characters has a thought bubble appear above its head, showing a 3D grid with colored lines, representing the x, y, and z axes, and a box outlining the space, implying a 3D visualization.",
+    "key_concepts": ["3D Visualization", "Thinking in Higher Dimensions"]
+  },
+  {
+    "timestamp_start_str": "00:00:52",
+    "timestamp_end_str": "00:01:00",
+    "transcript_snippet": "For example, consider a linear transformation with three-dimensional vectors as inputs and three-dimensional vectors as outputs.",
+    "visual_description": "The screen is black with white text 'Three-dimensional transformation' at the top. Below, `L(v)` appears, representing a linear transformation. An input vector `[[2], [6], [-1]]` then appears on the left, labeled 'Input'. An output vector `[[3], [2], [0]]` appears on the right, labeled 'Output'.",
+    "key_concepts": ["3D Linear Transformation", "Input/Output Vectors"]
+  },
+  {
+    "timestamp_start_str": "00:01:00",
+    "timestamp_end_str": "00:01:13",
+    "transcript_snippet": "We can visualize this by smushing around all the points in three-dimensional space, as represented by a grid, in such a way that keeps the grid lines parallel and evenly spaced, and which fixes the origin in place.",
+    "visual_description": "A 3D coordinate system is shown inside a yellow wireframe cube. Initially, only the yellow x, y, and z axes are visible. Then, the standard basis vectors appear: red for x-direction, green for y-direction, light blue for z-direction. A colorful 3D grid (lines parallel to axes, fading colors from red/purple near origin to green/blue further out) fills the cube. The grid then deforms and rotates, showing a linear transformation while maintaining parallelism and even spacing of grid lines.",
+    "key_concepts": ["3D Grid", "Linear Transformation Visualization", "Origin Fixed"]
+  },
+  {
+    "timestamp_start_str": "00:01:13",
+    "timestamp_end_str": "00:01:29",
+    "transcript_snippet": "And just as with two dimensions, every point of space that we see moving around is really just a proxy for a vector who has its tip at that point, and what we're really doing is thinking about input vectors moving over to their corresponding outputs.",
+    "visual_description": "The 3D grid fades, leaving only the yellow axes and the wireframe cube. A pink arrow representing an input vector appears, showing its coordinates on the axes. A grey arrow appears next to it, representing the output vector. The input vector then 'moves' to become the output vector, then disappears, illustrating the transformation of a single vector. The process repeats, showing the input vector appearing and transforming into the output.",
+    "key_concepts": ["Vector as Point", "Input Vector", "Output Vector", "Transformation"]
+  },
+  {
+    "timestamp_start_str": "00:01:29",
+    "timestamp_end_str": "00:02:17",
+    "transcript_snippet": "And just as with two dimensions, one of these transformations is completely described by where the basis vectors go. But now, there are three standard basis vectors that we typically use: the unit vector in the x direction, i hat, the unit vector in the y direction, j hat, and a new guy, the unit vector in the z direction, called k hat. In fact, I think it's easier to think about these transformations by only following those basis vectors, since the full 3D grid representing all points can get kind of messy. By leaving a copy of the original axes in the background, we can think about the coordinates of where each of these three basis vectors lands. Record the coordinates of these three vectors as the columns of a 3x3 matrix. This gives a matrix that completely describes the transformation using only nine numbers.",
+    "visual_description": "The yellow axes are back, with the red i-hat, green j-hat, and light blue k-hat vectors aligned with them. Text appears identifying each vector as `î`, `ĵ`, and `k̂`. The vectors move, demonstrating a transformation. The coordinates of where i-hat lands `[[1], [0], [-1]]` are shown, then where j-hat lands `[[1], [1], [0]]`, and finally where k-hat lands `[[1], [0], [1]]`. These three column vectors combine to form a 3x3 matrix `[[1, 1, 1], [0, 1, 0], [-1, 0, 1]]` on the top right, with columns colored to match the transformed basis vectors.",
+    "key_concepts": ["3D Basis Vectors", "i-hat", "j-hat", "k-hat", "Matrix Representation", "Columns as Transformed Basis Vectors"]
+  },
+  {
+    "timestamp_start_str": "00:02:17",
+    "timestamp_end_str": "00:02:50",
+    "transcript_snippet": "As a simple example, consider the transformation that rotates space 90 degrees around the Y axis. So that would mean that it takes i hat to the coordinates 0 0 -1, on the Z axis. It doesn't move j hat, so it stays at the coordinates 0 1 0. And then k hat moves over to the X axis at 1 0 0. Those three sets of coordinates become the columns of a matrix that describes that rotation transformation.",
+    "visual_description": "A 3D grid within the yellow wireframe cube rotates 90 degrees around the Y-axis. The red i-hat vector rotates downwards, mapping to `[[0], [0], [-1]]`. The green j-hat vector remains in place, mapping to `[[0], [1], [0]]`. The light blue k-hat vector rotates to the x-axis, mapping to `[[1], [0], [0]]`. The three transformed basis vectors are shown, and then they form the 3x3 matrix `[[0, 0, 1], [0, 1, 0], [-1, 0, 0]]` on the top right.",
+    "key_concepts": ["Rotation Transformation", "Y-axis Rotation", "Matrix of Rotation", "Basis Vector Transformation"]
+  },
+  {
+    "timestamp_start_str": "00:02:50",
+    "timestamp_end_str": "00:03:29",
+    "transcript_snippet": "To see where a vector with coordinates X Y Z lands, the reasoning is almost identical to what it was for two dimensions. Each of those coordinates can be thought of as instructions for how to scale each basis vector so that they add together to get your vector. And the important part, just like the 2D case, is that this scaling and adding process works both before and after the transformation. So to see where your vector lands, you multiply those coordinates by the corresponding columns of the matrix, and then you add together the three results.",
+    "visual_description": "The yellow axes with i-hat, j-hat, k-hat return. An input vector `[[x], [y], [z]]` is shown next to the vector equation `v = x*î + y*ĵ + z*k̂`. The i-hat, j-hat, and k-hat vectors are scaled by x, y, and z respectively, and then added graphically to form the pink input vector. Then the transformed basis vectors (from the previous example, rotated around Y-axis) are shown scaled by x, y, and z, and then added to form the final transformed pink vector. On the black screen, the matrix `[[0, 1, 2], [3, 4, 5], [6, 7, 8]]` (labeled 'Transformation') is shown next to the input vector `[[x], [y], [z]]` (labeled 'Input vector'). The multiplication is broken down: `x` times the first column, `y` times the second, `z` times the third, all added together to form the 'Output vector'.",
+    "key_concepts": ["Matrix-Vector Multiplication", "Linear Combination", "Scaling and Addition", "Transformed Basis Vectors"]
+  },
+  {
+    "timestamp_start_str": "00:03:29",
+    "timestamp_end_str": "00:04:04",
+    "transcript_snippet": "Multiplying two matrices is also similar. Whenever you see two 3x3 matrices getting multiplied together, you should imagine first applying the transformation encoded by the right one, then applying the transformation encoded by the left one. It turns out that 3D matrix multiplication is actually pretty important for fields like computer graphics and robotics, since things like rotations in three dimensions can be pretty hard to describe, but they're easier to wrap your mind around if you can break them down as the composition of separate, easier-to-think-about rotations.",
+    "visual_description": "Two 3x3 matrices are shown: `[[0, -2, 2], [5, 1, 5], [1, 4, -1]]` (labeled 'Second transformation') and `[[0, 1, 2], [3, 4, 5], [6, 7, 8]]` (labeled 'First transformation'). The 3D grid returns, first undergoing the transformation from the right matrix, then further deforming by the transformation from the left matrix. The grid rotates and shears through space. Text 'Computer graphics' and 'Robotics' appear on the screen, indicating applications.",
+    "key_concepts": ["Matrix-Matrix Multiplication", "Composition of Transformations", "Computer Graphics", "Robotics"]
+  },
+  {
+    "timestamp_start_str": "00:04:04",
+    "timestamp_end_str": "00:04:31",
+    "transcript_snippet": "Performing this matrix multiplication numerically is, once again, pretty similar to the two-dimensional case. In fact, a good way to test your understanding of the last video would be to try to reason through what specifically this matrix multiplication should look like, thinking closely about how it relates to the idea of applying two successive transformations in space.",
+    "visual_description": "The two 3x3 matrices (`[[0, -2, 2], [5, 1, 5], [1, 4, -1]]` and `[[0, 1, 2], [3, 4, 5], [6, 7, 8]]`) remain on the black screen. The 3D grid animation briefly shows the combined transformation again, emphasizing the successive application of transformations. The screen returns to the two matrices. The background music starts to fade out.",
+    "key_concepts": ["Numerical Matrix Multiplication", "Successive Transformations"]
+  },
+  {
+    "timestamp_start_str": "00:04:31",
+    "timestamp_end_str": "00:04:47",
+    "transcript_snippet": "In the next video, I'll start getting into the determinant.",
+    "visual_description": "Text 'Next video: The determinant' appears at the top. The screen transitions to a 2D grid with a transformation matrix `[[3, 2], [0, 2]]` in the top-left corner. A unit square (area 'A') transforms into a parallelogram with a larger area. The determinant calculation `det([[3, 2], [0, 2]]) = 6` is shown, indicating the scaling factor of the area. The 3Blue1Brown logo returns, animated, as the background music plays again and fades out.",
+    "key_concepts": ["Next Video Teaser", "Determinant", "Area Scaling", "2D Transformation"]
+  }
+]
+```

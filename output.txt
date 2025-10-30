@@ -1,0 +1,150 @@
+Here is a detailed log of events from the video, including a visual description of the Transformer model diagram.
+
+[00:00:00] The video begins with a black screen and white text that reads "Large Language Models for the curious beginner".
+
+[00:00:01] A white scroll with text on it rolls in from the top left corner, curving as it rolls. The text visible on the scroll says "Human: Can you explain the history of transistors and how they're relevant to computers? What is a transistor, and how exactly is it used to perform computations? AI assistant:".
+
+[00:00:11] The bottom part of the scroll, where the AI assistant's response would be, is torn off.
+
+[00:00:13] A stack of gray, square blocks appears on the right side of the screen. An arrow points from the text "To be or not to ____" down into the stack of blocks.
+
+[00:00:18] An arrow emerges from the stack, pointing to the word "be". The blocks in the stack briefly glow teal.
+
+[00:00:20] The text "To be or not to be" is now visible. The sequence repeats: an arrow points from the text "Human: Can you explain the history of transistors and how they're relevant to computers? What is a transistor, and how exactly is it used to perform computations? AI assistant: A transistor" into the block stack.
+
+[00:00:25] The blocks glow teal, and an arrow points out to the word "A". The text is updated to include "A". The process repeats, and "A transistor" is generated.
+
+[00:00:30] "is" is generated next.
+
+[00:00:32] "a semiconductor" is generated.
+
+[00:00:34] "device used to amplify or switch electronic signals." is generated.
+
+[00:00:36] "It consists of three layers" is generated, then the blocks reform into a solid cube labeled "Large Language Model". The text from the script flies into the cube.
+
+[00:00:39] The solid cube labeled "Large Language Model" is shown. An arrow points from the text "Paris is a city in ____" down into the cube.
+
+[00:00:43] An arrow emerges from the cube pointing to the word "France".
+
+[00:00:46] Instead of a single word, a bar chart appears on the right, showing "France" with 17%, "and" with 16%, "the" with 9%, "Logan" with 7%, and other words with smaller percentages.
+
+[00:00:52] The text at the top of the screen reads: "What follows is a conversation between a user and a helpful, very knowledgeable AI assistant." Below, it says: "User: Give me some ideas for what to do when visiting Santiago. AI Assistant: ____". The user's prompt is highlighted with a green box.
+
+[00:01:04] The block stack glows teal. A bar chart appears, showing "Sure" with 28% and "there" with 22%. "Sure" is selected.
+
+[00:01:07] The text updates to "AI Assistant: Sure, there are". A new bar chart appears with "are" at 98%. "are" is selected.
+
+[00:01:09] The text updates to "AI Assistant: Sure, there are plenty". "plenty" is selected.
+
+[00:01:11] The text updates to "AI Assistant: Sure, there are plenty of things". "things" is selected.
+
+[00:01:13] The text updates to "AI Assistant: Sure, there are plenty of things to". "to" is selected.
+
+[00:01:15] The text updates to "AI Assistant: Sure, there are plenty of things to do". "do" is selected.
+
+[00:01:17] The text updates to "AI Assistant: Sure, there are plenty of things to do in". "in" is selected.
+
+[00:01:19] The text updates to "AI Assistant: Sure, there are plenty of things to do in Santiago! One option could be to take a walking tour of the city's historic center." This is generated word by word.
+
+[00:01:28] Many snippets of text surround the "Large Language Model" cube. Examples include "Call me Ishmael.", "The mitochondria is the powerhouse of the cell.", "Who controls the past controls the future. Who controls the present controls the past."
+
+[00:01:49] The cube spins around, and one dial on a block is highlighted. An arrow points from the text "It was the best of times it was the ___" into the cube.
+
+[00:01:52] A bar chart appears, showing probabilities for "worst", "age", "worse", "best", etc. The dial is shown turning. The word "Parameter" appears at the top.
+
+[00:02:00] The word "Weight" is added after "Parameter". The dial continues to turn, changing the probabilities.
+
+[00:02:08] The text "Large Language Model" appears. The cube now shows a vast, complex 3D grid of interconnected "horseshoe" shapes, representing the "hundreds of billions" of parameters. This grid fades out.
+
+[00:02:18] The cube reappears with a dial and bar chart. The text "Initially random" appears. An arrow points from the output to "..."
+
+[00:02:22] A sequence of panels shows different text inputs and the cube generating a single next word (e.g., "to", "one", "him", "my", "were", "the").
+
+[00:02:29] The text "It was the best of times it was the worst" is shown, then a longer passage of text from "A Tale of Two Cities" appears, containing the phrase "It was the best of times it was the worst". The cube is below.
+
+[00:02:34] The text "It was the best of times it was the ____" is shown as input. The expected output "worst" is highlighted in yellow. The model's prediction for "worst" is shown as 10% in the bar chart, while the correct "worst" is highlighted. The red box around the "worst" prediction and the green box around the "age" prediction indicate the discrepancy.
+
+[00:02:46] The values inside the dials are shown to be adjusted by "backpropagation" to make the model more likely to predict "worst".
+
+[00:02:57] A grid of training examples is shown, each with an input text, the cube, and a single predicted output word (e.g., "in", "then", "afraid", "The", "fair", "past", "stated", "up", "So", "him", "I", "last", "not", "to", "him", "all").
+
+[00:03:09] The grid of examples expands exponentially.
+
+[00:03:19] The text "1 Billion computations per Second" appears. A list of equations is shown. Below it, a timeline with "Second", "Minute", "Hour", "Day", "Month", "Year", "100 Years", "10,000 Years", and "1,000,000 Years" is shown, each nesting into the next.
+
+[00:03:41] The timeline expands to "100,000,000 Years".
+
+[00:03:46] The title "Training" appears. A smaller diagram of the cube, labeled "Tunable parameters", is shown with input text and output word. This is labeled "Step 1: Pretraining".
+
+[00:03:49] A robot icon with a speech bubble appears next to it. The speech bubble fills with squiggly lines.
+
+[00:03:59] A second box appears labeled "Step 2: RLHF". It shows a silhouette of a person interacting with a chatbot interface, where some responses are marked with a red X (unhelpful) and others with a green checkmark (helpful).
+
+[00:04:04] Six human worker silhouettes are shown on the left, each with a screen displaying chatbot interactions and feedback (red X or green checkmark). On the right, the cube of "Tunable parameters" is shown, with some dials glowing teal. The human feedback is used to adjust the parameters.
+
+[00:04:16] The pretraining grid and time scales are shown side-by-side.
+
+[00:04:22] A diagram labeled "GPU" (a graphics processing unit icon) is shown above a series of vertical lines. Input arrows point into the left side of the lines, and curved lines connect to a central vertical line, which then fans out to parallel vertical lines, and then merges back to one output line. This visualizes operations being performed in parallel.
+
+[00:04:29] The text "It was the best of times it was the worst of times" is shown with boxes around each word. Underneath, a diagram shows vertical bars representing word embeddings, with connections flowing sequentially from one word to the next. This is labeled "Before 2017".
+
+[00:04:37] The Google logo appears. A paper title "Attention Is All You Need" is shown with authors. Next to it, a diagram of the "Transformer" model appears.
+
+**Visual Description of Transformer Model Diagram (at 00:04:37):**
+
+The diagram depicts a complex neural network architecture. It consists of multiple layers of processing, arranged from left to right.
+
+1.  **Input Word Embeddings:** At the far left, a series of vertical bars represent the "input words" of a sentence. Each bar is divided into smaller colored segments (red and blue), symbolizing the numerical embedding of each word. For the phrase "It was the best of times it was the worst of times", there are 10 such bars, one for each word. Each word's embedding is processed independently initially.
+
+2.  **Layers of Processing (Encoders/Decoders):** Behind the input embeddings, there are multiple stacked gray, rectangular blocks. These blocks represent the core "layers" or "modules" of the Transformer. The video mentions these are composed of "Attention" and "Feedforward" operations.
+
+    *   **Attention Layers (left-most gray blocks):** These blocks are visually complex. They show lines crisscrossing between all the input word embeddings. Each word's embedding (represented by a vertical segmented bar) sends lines to and receives lines from *every other word's embedding* in the sequence. These lines are colored in a gradient from yellow to green, suggesting a flow of information. The connections are dense, illustrating the "attention" mechanism where each word considers its relationship to all other words simultaneously. The word "Attention" is written above this section.
+
+    *   **Feedforward Layers (right-most gray blocks):** Following the attention layers, there are blocks representing "feedforward neural networks". These layers are simpler in appearance, showing a dense, interconnected web of red and blue lines that look like a traditional neural network. Unlike the attention layers, the connections here are primarily internal to each word's processing stream, rather than between words. The word "Feedforward" is written above this section.
+
+3.  **Output (right-most vertical bars):** After passing through these stacked layers of attention and feedforward processing, the diagram shows a final set of vertical segmented bars on the far right. These are the "output embeddings", representing the refined numerical understanding of each word after considering its context within the input sentence.
+
+**Key visual features:**
+*   **Parallel Processing:** All word embeddings are processed simultaneously through the layers, unlike older sequential models. This is shown by the vertical alignment of the embeddings and the simultaneous crisscrossing connections in the attention mechanism.
+*   **Interconnectedness:** The dense lines in the attention layers highlight how each word's meaning is influenced by all other words in the input.
+*   **Layered Structure:** The stacking of gray blocks emphasizes the depth of the Transformer network, with information being progressively refined through multiple stages.
+
+[00:04:43] The previous model's sequential processing is shown above the Transformer model's parallel processing. The text "Previous Models" and "Transformers" are added.
+
+[00:04:50] The text "Down by the river bank ... until they jumped into the ____" is shown. The blank is highlighted in yellow.
+
+[00:04:54] Each word in the sentence is assigned a list of numbers (a vector). The word "bank" is highlighted, and its vector is shown.
+
+[00:05:11] The Attention operation is visualized. Curved lines representing connections crisscross between word vectors, similar to the initial Transformer diagram.
+
+[00:05:17] Two sentences are compared: "Down by the river bank" and "Deposit a check at the bank". For "river bank", the connections link "river" and "bank", and an image of a river bank appears. For "check at the bank", connections link "check" and "bank", and an image of a financial bank appears. This illustrates how attention helps disambiguate word meanings based on context.
+
+[00:05:27] The numbers encoding "bank" are shown changing based on the surrounding context.
+
+[00:05:37] A second layer, the Feedforward Neural Network, is introduced. It's visualized as a dense web of red and blue lines, extending from each word's vector.
+
+[00:05:50] Multiple repetitions of Attention and Feedforward layers are shown in sequence, extending into the distance.
+
+[00:05:56] A split screen shows the repeated layers on the left and a 3D coordinate system on the right. Arrows on the right show how the meaning of "bank" evolves from a general concept to "river bank" (based on context) by changing its position in the numerical space.
+
+[00:06:07] The model processes the entire input sequence through many repetitions of attention and feedforward.
+
+[00:06:10] The final vector for the last word is highlighted. It then produces a probability distribution for the next word, with "water" at 38%, "river" at 36%, etc.
+
+[00:06:29] The visualization of the evolving meaning of "bank" in numerical space is again shown.
+
+[00:06:37] The vastness of the parameters in the Large Language Model is shown again, emphasizing the complexity.
+
+[00:06:48] The initial movie script example reappears, with the AI generating "A transistor is a semiconductor device used to amplify or switch electronic signals. It consists of three layers of semiconductor material, either p-type or n-type, forming a junction."
+
+[00:07:00] The logos for "Computer History Museum" and "3Blue1Brown" appear.
+
+[00:07:06] A display case with various computer chips and circuit boards is shown, likely from the Computer History Museum.
+
+[00:07:09] The animation shows the river bank example, and a cartoon character asks, "Can you explain what Attention does?".
+
+[00:07:12] The text "Deep Learning Series" appears, listing videos like "Neural Networks From the ground up", "How machines learn", "Backpropagation", "Backpropagation calculus", "Inside an LLM", and "Where do facts live?".
+
+[00:07:22] On the right, a parallel section shows "As a talk" with a video of a person (Grant Sanderson, the creator of 3Blue1Brown) giving a presentation on a similar topic.
+
+[00:07:38] The video concludes with a black screen and white text that reads "Where to dig deeper", with two pi symbols. Below that, it says "Special thanks to these Patreon supporters", listing many names.
