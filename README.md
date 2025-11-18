@@ -2,7 +2,9 @@
 
 An AI-powered system that makes STEM video content accessible to blind and low vision (BLV) learners through automated visual description generation and interactive question-answering.
 
-We annonated the ground truth, you can see the data at `evaluation/data/ground_truth`
+- We annonated the ground truth, you can see the data at `evaluation/data/ground_truth`
+- Please see the paper with updated graphics `Paper_VidExplainAgent`
+
 
 ## 🎯 Overview
 
