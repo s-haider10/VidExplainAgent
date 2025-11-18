@@ -1,3 +1,0 @@
-When two 3x3 matrices are multiplied, they are shown visually as two distinct matrices: a magenta matrix labeled 'Second transformation' and a multicolored matrix labeled 'First transformation' (00:03:28, 00:04:04).
-
-The multiplication is visually represented by a 3D animation showing the sequential application of the transformations encoded by these matrices. Specifically, the transformation from the right matrix is applied first, followed by the transformation from the left matrix. An example of this sequence shown is a rotation around the Y-axis followed by another transformation (00:03:28). This visual demonstration highlights how matrix-matrix multiplication represents the composition of successive transformations in space (00:03:28, 00:03:48).

@@ -6,6 +6,9 @@ import uuid
 from typing import Dict, List, Optional
 import logging # Added for logging
 import json # Added for saving JSON
+from contextlib import asynccontextmanager
+import time
+import asyncio
 
 # --- Load .env file BEFORE any other modules are imported ---
 from dotenv import load_dotenv
@@ -24,12 +27,48 @@ from . import explanation_synthesis
 logging.basicConfig(level=logging.INFO)
 log = logging.getLogger(__name__)
 
+# --- Configuration ---
+REQUEST_TIMEOUT_SECONDS = 180  # 3 minutes timeout for query processing
+API_TIMEOUT_SECONDS = 120  # 2 minutes timeout per API call
+
+# --- Global genai client (singleton pattern) ---
+genai_client: Optional[genai.Client] = None
+
+# --- Request tracking for monitoring ---
+active_requests = 0
+
 HISTORY_DIR = "history"   # Define history directory
 os.makedirs(HISTORY_DIR, exist_ok=True) # Ensure history dir exists
+
+# --- Application Lifespan Management ---
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    """
+    Initialize and cleanup resources for the application lifecycle.
+    This ensures a single genai client is reused across all requests.
+    """
+    global genai_client
+    # Startup: Initialize global client
+    log.info("🚀 Starting up VidExplainAgent backend...")
+    try:
+        genai_client = genai.Client()
+        log.info("✅ Initialized global genai client (singleton pattern)")
+    except Exception as e:
+        log.error(f"❌ Failed to initialize genai client: {e}", exc_info=True)
+        raise
+    
+    yield
+    
+    # Shutdown: Clean up client
+    log.info("🔄 Shutting down VidExplainAgent backend...")
+    if genai_client:
+        genai_client = None
+        log.info("✅ Cleaned up genai client resources")
 
 app = FastAPI(
     title="VidExplainAgent API",
     version="0.0.1",
+    lifespan=lifespan,  # Add lifespan handler for resource management
 )
 
 # --- CORS (Unchanged) ---
@@ -74,6 +113,7 @@ class QueryRequest(BaseModel):
     job_id: str
     query: str
     timestamp: Optional[float] = Field(None, description="Optional timestamp in seconds for context.")
+    tts_provider: Optional[str] = Field("macos", description="TTS provider: 'macos' (native Mac, free, instant) or 'gemini' (premium quality, rate limited)")
 
 class QueryResponse(BaseModel):
     explanation_text: str
@@ -83,15 +123,29 @@ class QueryResponse(BaseModel):
 
 # --- Background Worker ---
 def process_and_index_video(job_id: str, video_url: str):
+    """
+    Background task to process and index video.
+    Uses global genai client.
+    """
+    global genai_client
+    
     # Create history directory for this job
     job_history_dir = os.path.join(HISTORY_DIR, job_id)
     os.makedirs(job_history_dir, exist_ok=True)
+    
     try:
+        if not genai_client:
+            log.error("❌ Global genai client not available for background task!")
+            raise Exception("Service initialization error - genai client not available")
+        
         video_jobs[job_id]["status"] = "processing_video"
-        # Pass history dir to extraction function
+        log.info(f"🎬 Processing video for job_id: {job_id}")
+        
+        # Pass global client to extraction function
         extraction_result = ingestion_pipeline.extract_multimodal_data(
             video_url=video_url,
-            history_dir=job_history_dir # Pass directory path
+            history_dir=job_history_dir,
+            client=genai_client  # Pass shared client
         )
         # Check if result is the expected data list
         if isinstance(extraction_result, list):
@@ -128,18 +182,50 @@ def process_and_index_video(job_id: str, video_url: str):
 # --- API Endpoints ---
 @app.get("/", tags=["Health Check"])
 def read_root():
+    """Basic health check endpoint"""
     return {"status": "OK", "version": "0.0.1"}
+
+@app.get("/health", tags=["Health Check"])
+def health_check():
+    """Detailed health check with resource monitoring"""
+    global genai_client, active_requests
+    return {
+        "status": "healthy",
+        "version": "0.0.1",
+        "genai_client_initialized": genai_client is not None,
+        "active_requests": active_requests,
+        "timestamp": time.time()
+    }
 
 @app.post("/upload-video-url", tags=["Video Processing"], response_model=UploadResponse)
 def upload_video(
     request: UploadRequest,
     background_tasks: BackgroundTasks
 ) -> UploadResponse:
-    # (Unchanged)
+    """
+    F2: Submit a YouTube URL for processing.
+    Validates the URL format and starts background processing.
+    """
+    # Validate URL is provided
+    if not request.video_url or not request.video_url.strip():
+        log.warning("Upload request received without video URL")
+        raise HTTPException(
+            status_code=400, 
+            detail="Please provide a valid YouTube video URL."
+        )
+    
+    # Validate YouTube URL format
     if not YOUTUBE_URL_PATTERN.match(request.video_url):
-        raise HTTPException(status_code=400, detail="Invalid YouTube URL format.")
+        log.warning(f"Invalid YouTube URL format: {request.video_url}")
+        raise HTTPException(
+            status_code=400, 
+            detail="Invalid YouTube URL format. Please provide a valid YouTube video URL (e.g., https://www.youtube.com/watch?v=...)"
+        )
+    
     job_id = str(uuid.uuid4())
     video_jobs[job_id] = {"status": "pending", "video_url": request.video_url}
+    log.info(f"📤 Created new video processing job: {job_id} for URL: {request.video_url}")
+    
     background_tasks.add_task(process_and_index_video, job_id, request.video_url)
     return UploadResponse(job_id=job_id, status="processing")
 
@@ -156,16 +242,68 @@ def get_video_status(job_id: str) -> JobStatusResponse:
     )
 
 @app.post("/query-video", tags=["Query & Explanation"], response_model=QueryResponse)
-def query_video(request: QueryRequest) -> QueryResponse:
+async def query_video(request: QueryRequest) -> QueryResponse:
     """
     F4.1: Submits a natural language query for a processed video.
+    Now with timeout protection and resource monitoring.
     """
+    global active_requests
+    active_requests += 1
+    
+    start_time = time.time()
+    log.info(f"📥 Received query request for job_id: {request.job_id} (Active requests: {active_requests})")
+    
+    try:
+        # Wrap the entire query processing in a timeout
+        return await asyncio.wait_for(
+            _process_query(request, start_time),
+            timeout=REQUEST_TIMEOUT_SECONDS
+        )
+    except asyncio.TimeoutError:
+        log.error(f"⏱️ Query timeout after {REQUEST_TIMEOUT_SECONDS}s for job_id: {request.job_id}")
+        raise HTTPException(
+            status_code=504, 
+            detail=f"Request timeout after {REQUEST_TIMEOUT_SECONDS} seconds. Please try again."
+        )
+    finally:
+        active_requests -= 1
+        duration = time.time() - start_time
+        log.info(f"📊 Request completed in {duration:.2f}s (Active requests: {active_requests})")
+
+
+async def _process_query(request: QueryRequest, start_time: float) -> QueryResponse:
+    """Internal function to process query (for timeout wrapping)"""
+    
+    # Validate job_id is provided
+    if not request.job_id or not request.job_id.strip():
+        log.warning("Query request received without job_id")
+        raise HTTPException(
+            status_code=400, 
+            detail="No video has been uploaded yet. Please upload a YouTube video first before asking questions."
+        )
+    
+    # Validate query is provided
+    if not request.query or not request.query.strip():
+        log.warning(f"Query request received without query text for job_id: {request.job_id}")
+        raise HTTPException(
+            status_code=400, 
+            detail="Please provide a question to ask about the video."
+        )
+    
     job = video_jobs.get(request.job_id)
-    # ... (all job checks) ...
     if not job:
-        raise HTTPException(status_code=404, detail="Job ID not found.")
+        log.warning(f"Job ID not found: {request.job_id}")
+        raise HTTPException(
+            status_code=404, 
+            detail="Video not found. Please upload a YouTube video first, or the video processing session may have expired."
+        )
     if job.get("status") != "completed":
-        raise HTTPException(status_code=400, detail=f"Video is still processing. Status: {job.get('status')}")
+        status = job.get("status", "unknown")
+        log.info(f"Query attempted on incomplete video. Job ID: {request.job_id}, Status: {status}")
+        raise HTTPException(
+            status_code=400, 
+            detail=f"Video is still being processed. Current status: {status}. Please wait until processing is complete."
+        )
 
     # ... (all query_text and ChromaDB logic) ...
     query_text = request.query
@@ -201,31 +339,51 @@ def query_video(request: QueryRequest) -> QueryResponse:
     except Exception as save_err:
         log.error(f"Failed to save query info log: {save_err}")
 
-    # --- FIX: REMOVE try...finally and client.close() ---
-    client = genai.Client()
+    # --- Use global singleton client (no creation/cleanup needed) ---
+    global genai_client
+    if not genai_client:
+        log.error("❌ Global genai client not initialized!")
+        raise HTTPException(status_code=500, detail="Service initialization error. Please contact administrator.")
+    
     try:
-        # F5.1: Synthesize text explanation
-        explanation_data = explanation_synthesis.generate_text_explanation(
-            client=client, 
+        log.info("🔍 Starting text explanation synthesis...")
+        # F5.1: Synthesize text explanation (now async)
+        explanation_data = await explanation_synthesis.generate_text_explanation(
+            client=genai_client,  # Use shared client
             context_chunks=context_chunks, 
             query=query_text,
             history_dir=query_history_dir
         )
         explanation_text = explanation_data["text"]
+        log.info(f"✅ Text explanation generated ({len(explanation_text)} chars)")
         
-        # F5.2: Synthesize audio explanation
-        audio_url = explanation_synthesis.generate_audio_explanation(
-            client=client, 
+        # Validate TTS provider
+        tts_provider = request.tts_provider or "macos"
+        if tts_provider not in ["macos", "gemini"]:
+            log.warning(f"Invalid TTS provider '{tts_provider}', defaulting to 'macos'")
+            tts_provider = "macos"
+        
+        log.info(f"🎵 Starting audio explanation synthesis with {tts_provider} TTS...")
+        # F5.2: Synthesize audio explanation (now async with TTS provider)
+        audio_url = await explanation_synthesis.generate_audio_explanation(
+            client=genai_client if tts_provider == "gemini" else None,  # Only pass client for Gemini TTS
             text_to_speak=explanation_text,
-            history_dir=query_history_dir
+            history_dir=query_history_dir,
+            tts_provider=tts_provider
         )
+        log.info(f"✅ Audio explanation generated ({tts_provider} TTS): {audio_url}")
 
+        duration = time.time() - start_time
+        log.info(f"✨ Query completed successfully in {duration:.2f}s")
+        
         # F5.3: Return the final response
-        return QueryResponse(
+        response = QueryResponse(
             explanation_text=explanation_text,
             audio_url=audio_url,
             referenced_timestamps=explanation_data["timestamps"]
         )
+        log.info("📤 Sending response to client...")
+        return response
     except Exception as e:
         log.error(f"Error during query synthesis: {e}", exc_info=True)
         # (Error saving logic is fine)

@@ -1,0 +1,5 @@
+{
+  "text": "The video starts with a chalkboard-style title, \"Quantum 001,\" introducing 'Wave-Particle Duality' as a central idea in quantum mechanics.\n\nIt then demonstrates a double-slit experiment where a yellow light beam passes through two slits, forming circular waves that interfere. This creates an alternating pattern of bright and dark bands on a screen.\n\nNext, individual green electron dots are shown passing through the slits one by one. Though hitting randomly at first, they gradually build the same interference pattern on the screen, implying each electron interferes with itself.\n\nFinally, the video shows a hand holding a prism, through which a yellow light beam enters and splits into a spectrum of colors.",
+  "model": "gemini-2.5-flash",
+  "char_count": 712
+}

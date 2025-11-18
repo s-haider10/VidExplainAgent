@@ -1,0 +1,258 @@
+{
+  "video_url": "http://www.youtube.com/watch?v=DfQH3o6dKss",
+  "qa_pairs": [
+    {
+      "id": "q1",
+      "question": "What is Katie Mack's full title as shown on screen at 00:00:05?",
+      "ground_truth_answer": "Her title is 'Katie Mack, Hawking Chair in Cosmology and Science Communication, Perimeter Institute'.",
+      "ground_truth_context": [
+        "Timestamp: 00:00:05 - Text on the bottom left identifies her as 'Katie Mack, Hawking Chair in Cosmology and Science Communication, Perimeter Institute'."
+      ],
+      "difficulty": "easy",
+      "requires_visual": true,
+      "requires_temporal": false
+    },
+    {
+      "id": "q2",
+      "question": "According to Katie Mack, light can act like what two things?",
+      "ground_truth_answer": "Light can act like a particle and like a wave.",
+      "ground_truth_context": [
+        "Timestamp: 00:00:05 - A woman with brown hair... is speaking...",
+        "Transcript: You may have heard that light can act like a particle and like a wave."
+      ],
+      "difficulty": "easy",
+      "requires_visual": false,
+      "requires_temporal": false
+    },
+    {
+      "id": "q3",
+      "question": "How does the video visually demonstrate light's wave-like property at 00:00:16?",
+      "ground_truth_answer": "It shows a beam of yellow light, represented as sparkling particles, entering a transparent prism. The light refracts and exits as a spectrum of colors, illustrating its wave-like behavior.",
+      "ground_truth_context": [
+        "Timestamp: 00:00:16 - A close-up shot of a hand holding a transparent prism.",
+        "Visual: A beam of yellow light... enters the prism, refracts, and exits as a spectrum of colors, illustrating the wave-like behavior of light."
+      ],
+      "difficulty": "medium",
+      "requires_visual": true,
+      "requires_temporal": false
+    },
+    {
+      "id": "q4",
+      "question": "What text is shown on the chalkboard at 00:00:26?",
+      "ground_truth_answer": "The text 'EPISODE 1:' is shown, with 'WAVE-PARTICLE DUALITY' written below it in white chalk.",
+      "ground_truth_context": [
+        "Timestamp: 00:00:26 - The screen returns to the black chalkboard. White chalk text appears, first 'EPISODE 1:', then 'WAVE-PARTICLE DUALITY' below it."
+      ],
+      "difficulty": "easy",
+      "requires_visual": true,
+      "requires_temporal": false
+    },
+    {
+      "id": "q5",
+      "question": "How does the video visually represent the wave nature of a baseball at 00:00:38?",
+      "ground_truth_answer": "A white baseball with red stitching transforms into an abstract, wavy, pulsating shape, like a deformed, rippling sphere, to represent its wave-like nature.",
+      "ground_truth_context": [
+        "Timestamp: 00:00:38 - The screen shows a white baseball with red stitching...",
+        "Visual: The baseball then transforms into a more abstract, wavy, almost pulsating shape..."
+      ],
+      "difficulty": "medium",
+      "requires_visual": true,
+      "requires_temporal": false
+    },
+    {
+      "id": "q6",
+      "question": "What is diffraction, as defined by Katie Mack?",
+      "ground_truth_answer": "She defines it as 'the way that light bends around the sharp edges of objects or creates patterns when passing through narrow gaps.'",
+      "ground_truth_context": [
+        "Timestamp: 00:00:42 - Katie Mack is again on screen, speaking...",
+        "Transcript: One way to see the wave nature of light is through diffraction, the way that light bends around the sharp edges of objects or creates patterns when passing through narrow gaps."
+      ],
+      "difficulty": "medium",
+      "requires_visual": false,
+      "requires_temporal": false
+    },
+    {
+      "id": "q7",
+      "question": "What diagram is shown on screen to explain the double-slit experiment with light (starting at 00:00:53)?",
+      "ground_truth_answer": "The screen shows a black chalkboard with two vertical white lines (slits). A yellow beam of light approaches, passes through the slits, and transforms into expanding circular waves that create an interference pattern on a second wall.",
+      "ground_truth_context": [
+        "Timestamp: 00:00:53 - The scene changes to a black chalkboard with two vertical white lines representing slits...",
+        "Visual: ...it transforms into expanding yellow circular waves that interfere with each other, creating a distinct interference pattern..."
+      ],
+      "difficulty": "easy",
+      "requires_visual": true,
+      "requires_temporal": false
+    },
+    {
+      "id": "q8",
+      "question": "What causes the 'light and dark spots' in the double-slit experiment's interference pattern, according to the video?",
+      "ground_truth_answer": "This happens because when two wave crests or two troughs meet, they add together (constructive interference), but when a crest and a trough meet, they cancel out (destructive interference).",
+      "ground_truth_context": [
+        "Timestamp: 00:01:09 - The screen displays a white chalk outline of a rectangle...",
+        "Transcript: This happens because when two crests or two troughs of a wave meet, they add together, but when a crest and a trough meet, they cancel out."
+      ],
+      "difficulty": "medium",
+      "requires_visual": false,
+      "requires_temporal": false
+    },
+    {
+      "id": "q9",
+      "question": "How does the visual for the double-slit experiment *change* when using an electron beam instead of light (starting at 00:01:22)?",
+      "ground_truth_answer": "Instead of yellow light waves, small green dots representing electrons are emitted from the left. At first, they scatter, but as more are fired, they accumulate on the right wall to form a vertical interference pattern, similar to the one created by light.",
+      "ground_truth_context": [
+        "Timestamp: 00:01:22 - The scene reverts to the black chalkboard with two vertical white lines (slits)...",
+        "Visual: ...small green dots representing electrons are emitted... as more electrons are fired, they begin to form an interference pattern..."
+      ],
+      "difficulty": "medium",
+      "requires_visual": true,
+      "requires_temporal": true
+    },
+    {
+      "id": "q10",
+      "question": "The video shows the electron double-slit experiment being 'slowed down' (00:01:41). What happens in this version, and what conclusion is drawn?",
+      "ground_truth_answer": "Individual green electrons are fired one by one. Each hits the wall at a single point, appearing as a particle. However, over time, these individual points build up to form the *same* interference pattern. The conclusion drawn is that 'each electron is actually interfering with itself.'",
+      "ground_truth_context": [
+        "Timestamp: 00:01:41 - ...individual green electrons are fired one by one...",
+        "Visual: Each electron hits the far wall at a single point, but over time... they gradually build up to form the same vertical striped interference pattern...",
+        "Timestamp: 00:01:56 - ...",
+        "Transcript: Apparently, each electron is actually interfering with itself."
+      ],
+      "difficulty": "hard",
+      "requires_visual": true,
+      "requires_temporal": true
+    },
+    {
+      "id": "q11",
+      "question": "Explain the 'crux of wave-particle duality' as described by Katie Mack around 02:05.",
+      "ground_truth_answer": "The crux is that even an individual object, like an electron, has an essential wave-like nature and acts as a wave when moving through space. This is demonstrated by the single-electron interference experiment. The 'particle nature' is not a constant state but only appears upon observation or measurement.",
+      "ground_truth_context": [
+        "Timestamp: 00:01:56 - ...Transcript: Apparently, each electron is actually interfering with itself.",
+        "Timestamp: 00:02:05 - ...Transcript: This is the crux of wave-particle duality. Even something we think of as an individual object like an electron has an essential wave-like nature...",
+        "Timestamp: 00:02:05 - ...Transcript: The particle nature only appears when it's observed or measured."
+      ],
+      "difficulty": "hard",
+      "requires_visual": false,
+      "requires_temporal": true
+    },
+    {
+      "id": "q12",
+      "question": "Who is the second speaker introduced at 02:41, and what is her title?",
+      "ground_truth_answer": "The second speaker is Luna Zagorac, Postdoctoral Fellow in Cosmology, Perimeter Institute.",
+      "ground_truth_context": [
+        "Timestamp: 00:02:05 - ...the scene cuts to a woman with glasses, Luna Zagorac...",
+        "Visual: Text identifies her as 'Luna Zagorac, Postdoctoral Fellow in Cosmology, Perimeter Institute'."
+      ],
+      "difficulty": "easy",
+      "requires_visual": true,
+      "requires_temporal": false
+    },
+    {
+      "id": "q13",
+      "question": "How does the animation at 00:02:48 visually represent the scale of a 'fuzzy dark matter' particle?",
+      "ground_truth_answer": "It first shows a small yellow oval ('ELECTRON') next to a much larger baseball. Then, the baseball disappears, and a tiny green dot ('FUZZY DARK MATTER (HYPOTHETICAL)') appears, making the 'ELECTRON' seem large by comparison, thus showing the hypothetical particle is vastly smaller than an electron.",
+      "ground_truth_context": [
+        "Timestamp: 00:02:48 - The scene shows a solid purple background.",
+        "Visual: A small yellow oval appears in the center, labeled 'ELECTRON'. A much larger white baseball... appears...",
+        "Visual: A tiny green dot, labeled 'FUZZY DARK MATTER (HYPOTHETICAL)', appears, making the yellow 'ELECTRON' now seem large by comparison."
+      ],
+      "difficulty": "medium",
+      "requires_visual": true,
+      "requires_temporal": true
+    },
+    {
+      "id": "q14",
+      "question": "Luna Zagorac studies a particle much smaller than an electron. What is the surprising consequence of its small size?",
+      "ground_truth_answer": "The surprising consequence is that its associated wave is 'huge, enormous, on the size of galaxies,' making it potentially 'visible' on a cosmic scale.",
+      "ground_truth_context": [
+        "Timestamp: 00:02:55 - Luna Zagorac is speaking...",
+        "Transcript: This means that its wave is huge, enormous, on the size of galaxies.",
+        "Transcript: So it's something that would actually be visible."
+      ],
+      "difficulty": "medium",
+      "requires_visual": false,
+      "requires_temporal": false
+    },
+    {
+      "id": "q15",
+      "question": "What is 'fuzzy dark matter'?",
+      "ground_truth_answer": "According to Luna Zagorac, it is 'one possible explanation of dark matter, this mystery of missing mass in our universe.'",
+      "ground_truth_context": [
+        "Timestamp: 00:02:55 - ...",
+        "Transcript: ...which is one possible explanation of dark matter, this mystery of missing mass in our universe."
+      ],
+      "difficulty": "easy",
+      "requires_visual": false,
+      "requires_temporal": false
+    },
+    {
+      "id": "q16",
+      "question": "What visual is shown at 00:03:12 while Luna Zagorac discusses her simulations?",
+      "ground_truth_answer": "A close-up shot shows an abstract, colorful, and symmetrical pattern of warm orange, yellow, and magenta hues. This image, which was on the screen behind her, resembles an interference pattern and represents her simulation of fuzzy dark matter.",
+      "ground_truth_context": [
+        "Timestamp: 00:03:12 - The abstract, colorful image from the screen behind Luna Zagorac is shown in a closer shot.",
+        "Visual: It is a symmetrical pattern of warm orange, yellow, and magenta hues, resembling an interference pattern..."
+      ],
+      "difficulty": "medium",
+      "requires_visual": true,
+      "requires_temporal": false
+    },
+    {
+      "id": "q17",
+      "question": "What object is Katie Mack holding at 00:03:14?",
+      "ground_truth_answer": "She is holding a white baseball with red stitching in her right hand.",
+      "ground_truth_context": [
+        "Timestamp: 00:03:14 - Katie Mack is back on screen...",
+        "Visual: She holds a white baseball in her right hand as she speaks..."
+      ],
+      "difficulty": "easy",
+      "requires_visual": true,
+      "requires_temporal": false
+    },
+    {
+      "id": "q18",
+      "question": "Why can't you blame the wave nature of a baseball for a strikeout?",
+      "ground_truth_answer": "Because, as Katie Mack explains, the calculated wavelength of a fastball is 'much smaller than a proton,' meaning its wave-like effects are far too small to be observable or have an impact on that scale.",
+      "ground_truth_context": [
+        "Timestamp: 00:03:14 - Katie Mack is back on screen...",
+        "Transcript: ...you can even calculate the wavelength of a fastball, but it'll be much smaller than a proton, not nearly enough to blame for a strikeout."
+      ],
+      "difficulty": "hard",
+      "requires_visual": false,
+      "requires_temporal": false
+    },
+    {
+      "id": "q19",
+      "question": "What is shown in the first 5 seconds of the video?",
+      "ground_truth_answer": "The video starts with a black chalkboard background. White chalk outlines of 'Q' and '001' appear, and the 'Q' transitions into the colorful, chalk-textured word 'Quantum'. White specks float across the screen.",
+      "ground_truth_context": [
+        "Timestamp: 00:00:00 - The video starts with a black background resembling a chalkboard.",
+        "Visual: White chalk outlines of the letter 'Q' and the numbers '001' appear.",
+        "Visual: The 'Q' then transitions into the word 'Quantum' where each letter is filled with a different pastel color..."
+      ],
+      "difficulty": "easy",
+      "requires_visual": true,
+      "requires_temporal": true
+    },
+    {
+      "id": "q20",
+      "question": "Compare the conclusions drawn from the two double-slit experiment visuals (light vs. single electrons).",
+      "ground_truth_answer": "The first visual (00:00:53) shows that light, acting as a wave, passes through two slits and interferes with itself to create a pattern. The second visual (00:01:41) shows that individual electrons, thought of as particles, also create the *same* interference pattern over time, leading to the more complex conclusion that each single electron must be interfering with itself.",
+      "ground_truth_context": [
+        "Timestamp: 00:00:53 - ...laser light passes through two slits... creating a pattern of light and dark spots...",
+        "Timestamp: 00:01:41 - ...send one electron at a time... over time, you'll see that the same interference pattern appears.",
+        "Timestamp: 00:01:56 - Transcript: Apparently, each electron is actually interfering with itself."
+      ],
+      "difficulty": "hard",
+      "requires_visual": true,
+      "requires_temporal": true
+    }
+  ],
+  "metadata": {
+    "creation_date": "2025-11-17",
+    "num_easy": 8,
+    "num_medium": 7,
+    "num_hard": 5,
+    "total_questions": 20,
+    "coverage": "Covers visual descriptions, speaker identification, specific diagrams, and conceptual understanding of wave-particle duality, diffraction, and dark matter."
+  }
+}

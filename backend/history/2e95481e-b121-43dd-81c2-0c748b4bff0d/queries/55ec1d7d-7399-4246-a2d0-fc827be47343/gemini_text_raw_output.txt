@@ -1,0 +1,5 @@
+When individual electrons are sent one at a time through the double-slit, each electron hits the second wall at a single point. The video shows these individual green dots accumulating over time.
+
+Despite being sent individually, these discrete hits gradually form the same wave-like interference pattern seen with multiple electrons or light.
+
+The conclusion drawn is that each electron interferes with *itself*, demonstrating the strange wave-particle duality inherent to single particles.
