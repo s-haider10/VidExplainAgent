@@ -1,0 +1,196 @@
+{
+  "num_samples": 20,
+  "metrics_summary": {
+    "answer_relevancy": {
+      "pass_count": 17,
+      "fail_count": 3,
+      "total_evaluated": 20,
+      "pass_rate": 0.85,
+      "score": 0.85
+    },
+    "answer_correctness": {
+      "pass_count": 15,
+      "fail_count": 5,
+      "total_evaluated": 20,
+      "pass_rate": 0.75,
+      "score": 0.75
+    },
+    "answer_faithfulness": {
+      "pass_count": 18,
+      "fail_count": 2,
+      "total_evaluated": 20,
+      "pass_rate": 0.9,
+      "score": 0.9
+    },
+    "context_relevance": {
+      "pass_count": 20,
+      "fail_count": 0,
+      "total_evaluated": 20,
+      "pass_rate": 1.0,
+      "score": 1.0
+    }
+  },
+  "detailed_results": [
+    {
+      "question_id": "q1",
+      "question": "What is Katie Mack's full title as shown on screen at 00:00:05?",
+      "answer_relevancy": "fail",
+      "answer_correctness": "pass",
+      "answer_faithfulness": "pass",
+      "context_relevance": "pass"
+    },
+    {
+      "question_id": "q2",
+      "question": "According to Katie Mack, light can act like what two things?",
+      "answer_relevancy": "pass",
+      "answer_correctness": "pass",
+      "answer_faithfulness": "pass",
+      "context_relevance": "pass"
+    },
+    {
+      "question_id": "q3",
+      "question": "How does the video visually demonstrate light's wave-like property at 00:00:16?",
+      "answer_relevancy": "pass",
+      "answer_correctness": "pass",
+      "answer_faithfulness": "pass",
+      "context_relevance": "pass"
+    },
+    {
+      "question_id": "q4",
+      "question": "What text is shown on the chalkboard at 00:00:26?",
+      "answer_relevancy": "pass",
+      "answer_correctness": "pass",
+      "answer_faithfulness": "pass",
+      "context_relevance": "pass"
+    },
+    {
+      "question_id": "q5",
+      "question": "How does the video visually represent the wave nature of a baseball at 00:00:38?",
+      "answer_relevancy": "pass",
+      "answer_correctness": "pass",
+      "answer_faithfulness": "pass",
+      "context_relevance": "pass"
+    },
+    {
+      "question_id": "q6",
+      "question": "What is diffraction, as defined by Katie Mack?",
+      "answer_relevancy": "pass",
+      "answer_correctness": "pass",
+      "answer_faithfulness": "pass",
+      "context_relevance": "pass"
+    },
+    {
+      "question_id": "q7",
+      "question": "What diagram is shown on screen to explain the double-slit experiment with light (starting at 00:00:53)?",
+      "answer_relevancy": "pass",
+      "answer_correctness": "fail",
+      "answer_faithfulness": "pass",
+      "context_relevance": "pass"
+    },
+    {
+      "question_id": "q8",
+      "question": "What causes the 'light and dark spots' in the double-slit experiment's interference pattern, according to the video?",
+      "answer_relevancy": "pass",
+      "answer_correctness": "pass",
+      "answer_faithfulness": "pass",
+      "context_relevance": "pass"
+    },
+    {
+      "question_id": "q9",
+      "question": "How does the visual for the double-slit experiment *change* when using an electron beam instead of light (starting at 00:01:22)?",
+      "answer_relevancy": "pass",
+      "answer_correctness": "pass",
+      "answer_faithfulness": "pass",
+      "context_relevance": "pass"
+    },
+    {
+      "question_id": "q10",
+      "question": "The video shows the electron double-slit experiment being 'slowed down' (00:01:41). What happens in this version, and what conclusion is drawn?",
+      "answer_relevancy": "pass",
+      "answer_correctness": "pass",
+      "answer_faithfulness": "pass",
+      "context_relevance": "pass"
+    },
+    {
+      "question_id": "q11",
+      "question": "Explain the 'crux of wave-particle duality' as described by Katie Mack around 02:05.",
+      "answer_relevancy": "pass",
+      "answer_correctness": "fail",
+      "answer_faithfulness": "pass",
+      "context_relevance": "pass"
+    },
+    {
+      "question_id": "q12",
+      "question": "Who is the second speaker introduced at 02:41, and what is her title?",
+      "answer_relevancy": "fail",
+      "answer_correctness": "fail",
+      "answer_faithfulness": "fail",
+      "context_relevance": "pass"
+    },
+    {
+      "question_id": "q13",
+      "question": "How does the animation at 00:02:48 visually represent the scale of a 'fuzzy dark matter' particle?",
+      "answer_relevancy": "pass",
+      "answer_correctness": "fail",
+      "answer_faithfulness": "pass",
+      "context_relevance": "pass"
+    },
+    {
+      "question_id": "q14",
+      "question": "Luna Zagorac studies a particle much smaller than an electron. What is the surprising consequence of its small size?",
+      "answer_relevancy": "pass",
+      "answer_correctness": "pass",
+      "answer_faithfulness": "pass",
+      "context_relevance": "pass"
+    },
+    {
+      "question_id": "q15",
+      "question": "What is 'fuzzy dark matter'?",
+      "answer_relevancy": "pass",
+      "answer_correctness": "pass",
+      "answer_faithfulness": "fail",
+      "context_relevance": "pass"
+    },
+    {
+      "question_id": "q16",
+      "question": "What visual is shown at 00:03:12 while Luna Zagorac discusses her simulations?",
+      "answer_relevancy": "fail",
+      "answer_correctness": "fail",
+      "answer_faithfulness": "pass",
+      "context_relevance": "pass"
+    },
+    {
+      "question_id": "q17",
+      "question": "What object is Katie Mack holding at 00:03:14?",
+      "answer_relevancy": "pass",
+      "answer_correctness": "pass",
+      "answer_faithfulness": "pass",
+      "context_relevance": "pass"
+    },
+    {
+      "question_id": "q18",
+      "question": "Why can't you blame the wave nature of a baseball for a strikeout?",
+      "answer_relevancy": "pass",
+      "answer_correctness": "pass",
+      "answer_faithfulness": "pass",
+      "context_relevance": "pass"
+    },
+    {
+      "question_id": "q19",
+      "question": "What is shown in the first 5 seconds of the video?",
+      "answer_relevancy": "pass",
+      "answer_correctness": "pass",
+      "answer_faithfulness": "pass",
+      "context_relevance": "pass"
+    },
+    {
+      "question_id": "q20",
+      "question": "Compare the conclusions drawn from the two double-slit experiment visuals (light vs. single electrons).",
+      "answer_relevancy": "pass",
+      "answer_correctness": "pass",
+      "answer_faithfulness": "pass",
+      "context_relevance": "pass"
+    }
+  ],
+  "overall_pass_rate": 0.875
+}

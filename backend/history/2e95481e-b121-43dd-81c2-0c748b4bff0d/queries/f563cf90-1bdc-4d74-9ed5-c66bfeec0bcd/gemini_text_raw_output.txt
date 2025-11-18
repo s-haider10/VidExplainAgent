@@ -1,0 +1,3 @@
+The video visually demonstrates light's wave-like property by showing a beam of yellow light passing through a clear prism.
+
+As the light enters the prism, it bends and spreads out, fanning into a spectrum of colors: red, orange, yellow, green, blue, and purple. This splitting and bending of light, known as refraction and dispersion, is a characteristic behavior of waves.

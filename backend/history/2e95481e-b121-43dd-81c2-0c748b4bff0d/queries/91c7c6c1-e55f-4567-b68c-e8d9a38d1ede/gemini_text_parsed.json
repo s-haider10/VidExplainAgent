@@ -1,0 +1,5 @@
+{
+  "text": "In the double-slit experiment, the 'light and dark spots' on a wall are caused by light waves interfering after passing through two slits.\n\nBright spots appear when two wave crests or two wave troughs meet and add together. The video shows these as bright yellow bands.\n\nDark spots occur when a wave crest and a wave trough meet and cancel each other out. This creates the dark bands between the bright ones.",
+  "model": "gemini-2.5-flash",
+  "char_count": 408
+}

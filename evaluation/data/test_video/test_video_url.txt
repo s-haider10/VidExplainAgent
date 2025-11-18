@@ -1,0 +1,7 @@
+http://www.youtube.com/watch?v=DfQH3o6dKss
+
+# Notes:
+# - Ensure this matches the video_url in manual_annotations.json and qa_pairs.json
+# - Video should be publicly accessible
+# - Video should be educational content with visual elements
+# - Ideal length: 3-5 minutes

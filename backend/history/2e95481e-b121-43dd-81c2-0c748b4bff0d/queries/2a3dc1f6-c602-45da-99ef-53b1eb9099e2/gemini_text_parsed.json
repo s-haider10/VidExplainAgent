@@ -1,0 +1,5 @@
+{
+  "text": "The double-slit experiment with light demonstrates its wave nature, where waves from each slit interfere to create a pattern of bright and dark bands.\n\nWhen single electrons are sent through, they hit the wall individually. However, the video shows that over time, their accumulated hits form the same wave-like interference pattern. This implies each individual electron remarkably interferes with itself.",
+  "model": "gemini-2.5-flash",
+  "char_count": 406
+}

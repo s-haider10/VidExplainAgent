@@ -1,0 +1,5 @@
+When an electron beam replaces light in the double-slit experiment, the visual elements forming the pattern change.
+
+With light, the video shows a yellow beam creating circular yellow waves and alternating bright yellow and dark bands on the screen.
+
+For electrons, small green dots are launched. They spread out like waves after passing through the slits. These individual green dots then accumulate on the screen, forming the same interference pattern, but now composed of dense and sparse regions of green dots.

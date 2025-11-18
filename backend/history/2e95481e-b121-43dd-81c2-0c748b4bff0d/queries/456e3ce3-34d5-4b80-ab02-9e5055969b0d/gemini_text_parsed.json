@@ -1,0 +1,5 @@
+{
+  "text": "The 'light and dark spots' in the double-slit experiment are caused by light waves interfering with each other.\n\nAs light passes through two slits, the waves spread out and overlap. Bright spots, or bands, appear where wave crests or troughs meet and add together. Dark spots occur where a wave crest meets a trough, causing them to cancel each out.\n\nThe video shows light creating a pattern of alternating bright yellow and dark bands on a screen due to this interference.",
+  "model": "gemini-2.5-flash",
+  "char_count": 473
+}

@@ -1,0 +1,33 @@
+{
+  "video_url": "http://www.youtube.com/watch?v=DfQH3o6dKss",
+  "video_title": "Wave Particle Duality Explained | Perimeter Institute for Theoretical Physics",
+  "channel": "Perimeter Institute for Theoretical Physics",
+  "duration": "3:32",
+  "upload_date": "2023-07-04",
+  "subject": "Physics",
+  "topic": "Quantum Mechanics / Wave-Particle Duality",
+  "difficulty_level": "Beginner to Intermediate",
+  "target_audience": "General public, High school students, Undergraduates",
+  "language": "English",
+  "has_captions": true,
+  "has_audio_description": false,
+  "visual_complexity": "Moderate - Contains conceptual animations, explanatory diagrams, speakers, and text overlays",
+  "num_segments": 23,
+  "key_concepts_covered": [
+    "Wave-particle duality",
+    "Quantum mechanics",
+    "Double-slit experiment",
+    "Diffraction",
+    "Wave interference",
+    "Electrons",
+    "Observation effect",
+    "Fuzzy dark matter",
+    "Cosmology"
+  ],
+  "evaluation_metadata": {
+    "selected_for_testing": true,
+    "selection_rationale": "Representative of STEM (Physics) educational content that relies heavily on animations and analogies to explain complex, abstract concepts.",
+    "annotation_status": "Complete",
+    "quality_verified": true
+  }
+}

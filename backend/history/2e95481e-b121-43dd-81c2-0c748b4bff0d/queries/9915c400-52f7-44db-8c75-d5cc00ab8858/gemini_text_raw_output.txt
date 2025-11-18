@@ -1,0 +1,5 @@
+When using an electron beam instead of light, both create an interference pattern.
+
+For light, the video shows yellow light waves passing through slits, forming alternating bright yellow and dark bands on a screen.
+
+For electrons, small green dots representing individual electrons pass through the slits. Initially, they hit the screen randomly. However, over time, these discrete green dots accumulate to form the same vertical pattern of dense and sparse regions, just like the light waves.

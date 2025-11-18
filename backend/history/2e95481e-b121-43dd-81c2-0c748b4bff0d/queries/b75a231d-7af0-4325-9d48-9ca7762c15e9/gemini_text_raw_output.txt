@@ -1,0 +1,5 @@
+When the electron double-slit experiment is slowed down, individual electrons are sent one at a time. The video shows small green dots (electrons) launched singly.
+
+Each electron passes through a slit and hits the second wall at a single point. However, as more individual electrons hit over time, they gradually accumulate to form the same distinct vertical interference pattern seen with many electrons.
+
+This leads to the astounding conclusion that each individual electron interferes with *itself*, demonstrating its wave-like nature even when no other particles are present.

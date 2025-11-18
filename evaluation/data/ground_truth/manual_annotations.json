@@ -1,0 +1,306 @@
+{
+  "video_url": "http://www.youtube.com/watch?v=DfQH3o6dKss",
+  "video_title": "Wave-Particle Duality",
+  "duration": "03:32",
+  "subject": "Physics",
+  "annotations": [
+    {
+      "video_url": "http://www.youtube.com/watch?v=DfQH3o6dKss",
+      "annotations": [
+        {
+          "timestamp_start": "00:00:00",
+          "timestamp_end": "00:00:05",
+          "ground_truth_visual_description": "The video starts with a black background resembling a chalkboard. White chalk outlines of the letter 'Q' and the numbers '001' appear. The 'Q' then transitions into the word 'Quantum' where each letter is filled with a different pastel color and textured like chalk. The numbers '001' remain outlined in white chalk below 'Quantum'. White specks, resembling dust or stars, float across the screen, some briefly glow brighter.",
+          "ground_truth_transcript": "",
+          "key_concepts": ["title sequence"],
+          "difficulty": "beginner"
+        },
+        {
+          "timestamp_start": "00:00:05",
+          "timestamp_end": "00:00:10",
+          "ground_truth_visual_description": "A woman with brown hair, wearing a green sleeveless top, is speaking directly to the camera. Behind her is a dark blue chalkboard covered with white scientific equations and diagrams. Text on the bottom left identifies her as 'Katie Mack, Hawking Chair in Cosmology and Science Communication, Perimeter Institute'. She smiles and gestures with her hands.",
+          "ground_truth_transcript": "You may have heard that light can act like a particle and like a wave.",
+          "key_concepts": [
+            "light",
+            "particle",
+            "wave",
+            "wave-particle duality"
+          ],
+          "difficulty": "beginner"
+        },
+        {
+          "timestamp_start": "00:00:10",
+          "timestamp_end": "00:00:16",
+          "ground_truth_visual_description": "Katie Mack continues speaking, gesturing with her hands. The background remains the dark blue chalkboard with equations.",
+          "ground_truth_transcript": "It can bounce off a mirror like a particle and it can bend and spread out like a wave.",
+          "key_concepts": [
+            "reflection",
+            "diffraction",
+            "wave properties",
+            "particle properties"
+          ],
+          "difficulty": "beginner"
+        },
+        {
+          "timestamp_start": "00:00:16",
+          "timestamp_end": "00:00:19",
+          "ground_truth_visual_description": "A close-up shot of a hand holding a transparent prism. A beam of yellow light, shown as sparkling particles, enters the prism, refracts, and exits as a spectrum of colors, illustrating the wave-like behavior of light.",
+          "ground_truth_transcript": "For instance, when it passes through a prism.",
+          "key_concepts": [
+            "prism",
+            "refraction",
+            "light spectrum",
+            "wave properties"
+          ],
+          "difficulty": "beginner"
+        },
+        {
+          "timestamp_start": "00:00:19",
+          "timestamp_end": "00:00:26",
+          "ground_truth_visual_description": "Katie Mack is back on screen, explaining and gesturing. The chalkboard background with equations is visible behind her.",
+          "ground_truth_transcript": "With careful experiments, we can see how light waves can interfere with each other. But did you know that particles can act as waves too?",
+          "key_concepts": [
+            "wave interference",
+            "particle properties",
+            "wave properties",
+            "wave-particle duality"
+          ],
+          "difficulty": "intermediate"
+        },
+        {
+          "timestamp_start": "00:00:26",
+          "timestamp_end": "00:00:31",
+          "ground_truth_visual_description": "The screen returns to the black chalkboard. White chalk text appears, first 'EPISODE 1:', then 'WAVE-PARTICLE DUALITY' below it. The letters are drawn in a slightly unpolished, handwritten style.",
+          "ground_truth_transcript": "",
+          "key_concepts": ["episode title", "wave-particle duality"],
+          "difficulty": "beginner"
+        },
+        {
+          "timestamp_start": "00:00:31",
+          "timestamp_end": "00:00:38",
+          "ground_truth_visual_description": "Katie Mack is back on screen, talking about wave nature. She gestures with both hands spread wide. The scientific equations on the chalkboard behind her are visible.",
+          "ground_truth_transcript": "This is one of the central ideas in quantum mechanics. Everything has a wave nature: light, particles, and even, in an unobservable way,",
+          "key_concepts": [
+            "quantum mechanics",
+            "wave nature",
+            "light",
+            "particles",
+            "everything"
+          ],
+          "difficulty": "intermediate"
+        },
+        {
+          "timestamp_start": "00:00:38",
+          "timestamp_end": "00:00:42",
+          "ground_truth_visual_description": "The screen shows a white baseball with red stitching on a black background. The baseball then transforms into a more abstract, wavy, almost pulsating shape, with lines and shading emphasizing its wave-like representation. It looks like a deformed, rippling sphere.",
+          "ground_truth_transcript": "macroscopic objects like baseballs and people.",
+          "key_concepts": [
+            "macroscopic objects",
+            "wave nature",
+            "baseball",
+            "conceptual analogy"
+          ],
+          "difficulty": "beginner"
+        },
+        {
+          "timestamp_start": "00:00:42",
+          "timestamp_end": "00:00:53",
+          "ground_truth_visual_description": "Katie Mack is again on screen, speaking and using hand gestures to illustrate her points. The chalkboard with equations is her background.",
+          "ground_truth_transcript": "One way to see the wave nature of light is through diffraction, the way that light bends around the sharp edges of objects or creates patterns when passing through narrow gaps.",
+          "key_concepts": [
+            "diffraction",
+            "wave nature",
+            "light bending",
+            "patterns"
+          ],
+          "difficulty": "beginner"
+        },
+        {
+          "timestamp_start": "00:00:53",
+          "timestamp_end": "00:01:09",
+          "ground_truth_visual_description": "The scene changes to a black chalkboard with two vertical white lines representing slits in a wall. A yellow beam of light, shown as a cone of sparkling particles, approaches the left wall. As it passes through the two slits, it transforms into expanding yellow circular waves that interfere with each other, creating a distinct interference pattern on a second vertical wall to the right.",
+          "ground_truth_transcript": "In the double slit experiment, laser light passes through two slits in a wall and spreads out like a wave as it passes through. The waves coming from each slit interfere with each other, creating a pattern of light and dark spots on a wall on the other side.",
+          "key_concepts": [
+            "double-slit experiment",
+            "laser light",
+            "diffraction",
+            "wave interference",
+            "slits"
+          ],
+          "difficulty": "intermediate"
+        },
+        {
+          "timestamp_start": "00:01:09",
+          "timestamp_end": "00:01:17",
+          "ground_truth_visual_description": "The screen displays a white chalk outline of a rectangle. Inside, a yellow and black striped pattern is visible, representing the interference pattern created by light passing through the double-slit experiment. The yellow stripes are bright, and the black stripes are dark.",
+          "ground_truth_transcript": "This happens because when two crests or two troughs of a wave meet, they add together, but when a crest and a trough meet, they cancel out.",
+          "key_concepts": [
+            "wave interference",
+            "crests",
+            "troughs",
+            "constructive interference",
+            "destructive interference"
+          ],
+          "difficulty": "intermediate"
+        },
+        {
+          "timestamp_start": "00:01:17",
+          "timestamp_end": "00:01:22",
+          "ground_truth_visual_description": "Katie Mack is speaking to the camera, asking a question. The equations on the chalkboard background are still present.",
+          "ground_truth_transcript": "But what if instead of laser light, you throw particles at the wall?",
+          "key_concepts": [
+            "particles",
+            "double-slit experiment",
+            "thought experiment"
+          ],
+          "difficulty": "beginner"
+        },
+        {
+          "timestamp_start": "00:01:22",
+          "timestamp_end": "00:01:36",
+          "ground_truth_visual_description": "The scene reverts to the black chalkboard with two vertical white lines (slits). This time, small green dots representing electrons are emitted from the left. Initially, they scatter, but as more electrons are fired, they begin to form an interference pattern on the right wall, similar to the light waves. The dots accumulate in vertical bands.",
+          "ground_truth_transcript": "If you have a powerful electron beam, you can see that instead of two spots directly behind the slits or randomly distributed spots, an interference pattern will appear, just like with the light.",
+          "key_concepts": [
+            "electron beam",
+            "double-slit experiment",
+            "particles",
+            "interference pattern",
+            "wave-particle duality"
+          ],
+          "difficulty": "intermediate"
+        },
+        {
+          "timestamp_start": "00:01:36",
+          "timestamp_end": "00:01:41",
+          "ground_truth_visual_description": "Katie Mack is explaining to the camera. Her hands are open, gesturing broadly. The chalkboard with equations is in the background.",
+          "ground_truth_transcript": "The electrons are behaving like waves and interfering with each other.",
+          "key_concepts": ["electrons", "wave behavior", "interference"],
+          "difficulty": "beginner"
+        },
+        {
+          "timestamp_start": "00:01:41",
+          "timestamp_end": "00:01:56",
+          "ground_truth_visual_description": "The chalkboard again shows the two slits. Now, individual green electrons are fired one by one from the left. Each electron hits the far wall at a single point, but over time, as more electrons are fired, they gradually build up to form the same vertical striped interference pattern seen with the electron beam.",
+          "ground_truth_transcript": "Even weirder, you can slow the experiment down and send one electron at a time. Each electron will pass through and hit the wall at a single point, but over time, you'll see that the same interference pattern appears.",
+          "key_concepts": [
+            "single electron",
+            "double-slit experiment",
+            "wave-particle duality",
+            "quantum behavior"
+          ],
+          "difficulty": "intermediate"
+        },
+        {
+          "timestamp_start": "00:01:56",
+          "timestamp_end": "00:02:05",
+          "ground_truth_visual_description": "The white chalk outline of a rectangle is filled with a pattern of green dots forming vertical stripes, representing the interference pattern from individual electrons over time. The dots are denser in some stripes and sparse in others, mirroring the wave interference pattern.",
+          "ground_truth_transcript": "even though no other electrons were passing through at the time to create interference. Apparently, each electron is actually interfering with itself.",
+          "key_concepts": [
+            "electron interference",
+            "self-interference",
+            "quantum mechanics",
+            "probability distribution"
+          ],
+          "difficulty": "advanced"
+        },
+        {
+          "timestamp_start": "00:02:05",
+          "timestamp_end": "00:02:41",
+          "ground_truth_visual_description": "Katie Mack is back on screen, explaining the implications of wave-particle duality. She uses expressive hand gestures. The chalkboard background is still visible. At 02:41, the scene cuts to a woman with glasses, Luna Zagorac, standing in a brightly lit room with chairs and a large screen displaying an abstract, colorful image behind her. Text identifies her as 'Luna Zagorac, Postdoctoral Fellow in Cosmology, Perimeter Institute'.",
+          "ground_truth_transcript": "This is the crux of wave-particle duality. Even something we think of as an individual object like an electron has an essential wave-like nature and acts as a wave when it's moving through space. The particle nature only appears when it's observed or measured. On the quantum scale though, for very small particles, that essential waviness fundamentally changes how particles interact with each other, and it means we have to develop new ways to think about and work with the subatomic world. And in some cases, particles acting like waves can change the face of the cosmos itself.",
+          "key_concepts": [
+            "wave-particle duality",
+            "electron",
+            "wave nature",
+            "particle nature",
+            "observation effect",
+            "measurement problem",
+            "quantum scale",
+            "subatomic world",
+            "cosmology",
+            "dark matter"
+          ],
+          "difficulty": "advanced"
+        },
+        {
+          "timestamp_start": "00:02:41",
+          "timestamp_end": "00:02:48",
+          "ground_truth_visual_description": "Luna Zagorac is speaking to the camera, gesturing with her hands. The room background is still visible, with the abstract image on the screen behind her.",
+          "ground_truth_transcript": "All particles have a wave nature, which is super convenient for me, because the particle that I study is super, super small.",
+          "key_concepts": ["wave nature", "particles", "small particles"],
+          "difficulty": "beginner"
+        },
+        {
+          "timestamp_start": "00:02:48",
+          "timestamp_end": "00:02:55",
+          "ground_truth_visual_description": "The scene shows a solid purple background. A small yellow oval appears in the center, labeled 'ELECTRON'. A much larger white baseball with red stitching appears from the right, making the 'ELECTRON' seem tiny in comparison. The baseball then moves off-screen to the right. A tiny green dot, labeled 'FUZZY DARK MATTER (HYPOTHETICAL)', appears, making the yellow 'ELECTRON' now seem large by comparison.",
+          "ground_truth_transcript": "If you can try to envision how much smaller an electron is than a baseball, my particle is that much smaller than an electron.",
+          "key_concepts": [
+            "electron",
+            "baseball",
+            "fuzzy dark matter",
+            "scale",
+            "hypothetical particle"
+          ],
+          "difficulty": "intermediate"
+        },
+        {
+          "timestamp_start": "00:02:55",
+          "timestamp_end": "00:03:12",
+          "ground_truth_visual_description": "Luna Zagorac is speaking and gesturing excitedly, explaining the large wave nature of the small particle. The room and screen with the abstract image are in the background.",
+          "ground_truth_transcript": "This means that its wave is huge, enormous, on the size of galaxies. So it's something that would actually be visible. And that's exactly what I study in my simulations of fuzzy dark matter, which is one possible explanation of dark matter, this mystery of missing mass in our universe.",
+          "key_concepts": [
+            "fuzzy dark matter",
+            "wave size",
+            "galaxies",
+            "simulations",
+            "dark matter",
+            "missing mass"
+          ],
+          "difficulty": "advanced"
+        },
+        {
+          "timestamp_start": "00:03:12",
+          "timestamp_end": "00:03:14",
+          "ground_truth_visual_description": "The abstract, colorful image from the screen behind Luna Zagorac is shown in a closer shot. It is a symmetrical pattern of warm orange, yellow, and magenta hues, resembling an interference pattern or wave distribution.",
+          "ground_truth_transcript": "",
+          "key_concepts": [
+            "fuzzy dark matter simulation",
+            "visual representation",
+            "interference pattern"
+          ],
+          "difficulty": "intermediate"
+        },
+        {
+          "timestamp_start": "00:03:14",
+          "timestamp_end": "00:03:27",
+          "ground_truth_visual_description": "Katie Mack is back on screen, concluding the discussion. She holds a white baseball in her right hand as she speaks, then puts it down. The chalkboard background is present.",
+          "ground_truth_transcript": "Wave-particle duality applies to everything. If you like, you can even calculate the wavelength of a fastball, but it'll be much smaller than a proton, not nearly enough to blame for a strikeout.",
+          "key_concepts": [
+            "wave-particle duality",
+            "macroscopic objects",
+            "wavelength calculation",
+            "fastball",
+            "proton",
+            "practical limitations"
+          ],
+          "difficulty": "beginner"
+        },
+        {
+          "timestamp_start": "00:03:27",
+          "timestamp_end": "00:03:32",
+          "ground_truth_visual_description": "The screen turns black, and the white logo for 'Perimeter Institute' appears in the center.",
+          "ground_truth_transcript": "",
+          "key_concepts": ["credits", "logo"],
+          "difficulty": "beginner"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "annotation_date": "2025-11-17",
+    "annotator_name": "Syed Ali Haider",
+    "annotation_guidelines": "Focus on precise spatial descriptions, visual elements that would be inaccessible to BLV learners",
+    "quality_check": "completed"
+  }
+}

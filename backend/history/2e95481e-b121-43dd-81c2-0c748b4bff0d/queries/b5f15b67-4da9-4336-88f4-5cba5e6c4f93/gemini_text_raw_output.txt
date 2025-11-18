@@ -1,0 +1,5 @@
+The double-slit experiment with light concludes that light behaves like a wave, creating an interference pattern of alternating bright and dark bands. The video shows yellow light waves spreading and interfering to form this pattern.
+
+When individual electrons are sent through, the experiment reveals they also behave like waves. The video depicts individual green dot electrons hitting a wall, gradually building up the same interference pattern over time, even when sent one by one.
+
+This implies each electron interferes with itself, demonstrating the wave-particle duality of matter at an individual particle level, unlike light waves interfering with each other.
